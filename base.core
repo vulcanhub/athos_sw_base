@@ -1,0 +1,37 @@
+CAPI=2:
+
+name: "bci:sw:base:1.0"
+description: "base"
+
+filesets:
+  files_base:
+    files:
+      - memory.h :                   {is_include_file: true}
+      - memory.c
+      - mmio.h :                     {is_include_file: true}
+      - mmio.c
+      - bitfield.h :                 {is_include_file: true}
+      - bitfield.c
+      - csr.h :                      {is_include_file: true}
+      - csr_registers.h :            {is_include_file: true}
+      - stdasm.h :                   {is_include_file: true}
+      - hardened.h :                 {is_include_file: true}
+      - macros.h :                   {is_include_file: true}
+      - freestanding/assert.h:       {is_include_file: true}
+      - freestanding/float.h:        {is_include_file: true}
+      - freestanding/iso646.h:       {is_include_file: true}
+      - freestanding/limits.h:       {is_include_file: true}
+      - freestanding/meson.build:    {is_include_file: true}
+      - freestanding/README.md:      {is_include_file: true}
+      - freestanding/stdalign.h:     {is_include_file: true}
+      - freestanding/stdarg.h:       {is_include_file: true}
+      - freestanding/stdbool.h:      {is_include_file: true}
+      - freestanding/stddef.h:       {is_include_file: true}
+      - freestanding/stdint.h:       {is_include_file: true}
+      - freestanding/stdnoreturn.h:  {is_include_file: true}
+    file_type: swCSource
+
+targets:
+  default: 
+    filesets:
+      - files_base
