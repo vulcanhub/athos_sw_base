@@ -33,7 +33,6 @@ filesets:
       - freestanding/float.h:        {is_include_file: true}
       - freestanding/iso646.h:       {is_include_file: true}
       - freestanding/limits.h:       {is_include_file: true}
-      - freestanding/meson.build:    {is_include_file: true}
       - freestanding/README.md:      {is_include_file: true}
       - freestanding/stdalign.h:     {is_include_file: true}
       - freestanding/stdarg.h:       {is_include_file: true}
